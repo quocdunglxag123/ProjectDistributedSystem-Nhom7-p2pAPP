@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="viewcontent" template="/layout/main.jsp">
+		<put-attribute name="title" value="View Contents" />
+		<put-attribute name="header" value="/layout/header.jsp" />
+		<put-attribute name="menu" value="/layout/menu.jsp" />
+		<put-attribute name="data" value="/ViewContent" />
+		<put-attribute name="body"
+			value="/views/viewcontent.jsp" />
+	</definition>
+
+	<!-- DeleteContent page -->
+	<definition name="deletecontent" extends="viewcontent">
+		<put-attribute name="title" value="View Contents" />
+		<put-attribute name="data" value="/DeleteContent" />
+		<put-attribute name="body"
+			value="/views/viewcontent.jsp" />
+	</definition>
+
+	<!-- EditContent page -->
+	<definition name="editcontent" extends="viewcontent">
+		<put-attribute name="title" value="View Contents" />
+		<put-attribute name="data" value="/LoadEditContent" />
+		<put-attribute name="body"
+			value="/views/formcontent.jsp" />
+	</definition>
+
+	<!-- Edit Profile page -->
+	<definition name="editprofile" extends="viewcontent">
+		<put-attribute name="title" value="Edit Profile" />
+		<put-attribute name="data" value="/Profile" />
+		<put-attribute name="body"
+			value="/views/editprofile.jsp" />
+	</definition>
+
+	<!-- Search Contents -->
+	<definition name="search" extends="viewcontent">
+		<put-attribute name="data" value="" />
+		<put-attribute name="body" value="/views/viewcontent.jsp" />
+	</definition>
+
+	<!-- Form Content page -->
+	<definition name="formcontent" extends="viewcontent">
+		<put-attribute name="title" value="Form Content" />
+		<put-attribute name="data" value="" />
+		<put-attribute name="body"
+			value="/views/formcontent.jsp" />
+	</definition>
+
+</tiles-definitions>
