@@ -17,7 +17,7 @@ var title = document.forms['formcontent']['title'];
 			title_error1.style.display ="none";
 			/* title.focus(); */
 			return false;
-		}else if(title.value.length < 10){
+		}else if(title.value.length < 1){
 			document.getElementById('title').style.border = "3px solid red";
 			title_error.style.display ="none";
 			title_error1.style.display ="block";
@@ -29,7 +29,7 @@ var title = document.forms['formcontent']['title'];
 			brief_error1.style.display ="none";
 			/* brief.focus(); */
 			return false;
-		}else if(brief.value.length < 30){
+		}else if(brief.value.length < 1){
 			document.getElementById('brief').style.border = "3px solid red";
 			brief_error.style.display ="none";
 			brief_error1.style.display ="block";
@@ -41,7 +41,7 @@ var title = document.forms['formcontent']['title'];
 			content_error1.style.display ="none";
 			/* content.focus(); */
 			return false;
-		}else if(content.value.length < 50){
+		}else if(content.value.length < 1){
 			document.getElementById('content').style.border = "3px solid red";
 			content_error.style.display ="none";
 			content_error1.style.display ="block";
@@ -51,7 +51,7 @@ var title = document.forms['formcontent']['title'];
 	}
 	
 	function title_Verify(){
-		if(title.value.length >= 10) {
+		if(title.value.length >= 1) {
 			document.getElementById('title').style.border = "3px solid #47a447";
 			title_error.style.display ="none";
 			title_error1.style.display ="none";
@@ -59,7 +59,7 @@ var title = document.forms['formcontent']['title'];
 		}
 	}
 	function brief_Verify(){
-		if(brief.value.length >= 30) {
+		if(brief.value.length >= 1) {
 			document.getElementById('brief').style.border = "3px solid #47a447";
 			brief_error.style.display ="none";
 			brief_error1.style.display ="none";
@@ -67,7 +67,7 @@ var title = document.forms['formcontent']['title'];
 		}
 	}
 	function content_Verify(){
-		if(content.value.length >= 50) {
+		if(content.value.length >= 1) {
 			document.getElementById('content').style.border = "3px solid #47a447";
 			content_error.style.display ="none";
 			content_error1.style.display ="none";

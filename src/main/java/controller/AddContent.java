@@ -32,11 +32,11 @@ public class AddContent extends HttpServlet {
 		String content = request.getParameter("content");
 		String createddate = java.time.LocalDateTime.now().toString();
 		int idmember = Integer.parseInt(CookieUtils.get("idmember", request));
-		
+		int publiccontent =Integer.parseInt(request.getParameter("publiccontent"));
 		if (title != null && brief != null && content != null && title != "" && brief != "" && content != "") {
-			if (title.length() > 10 && brief.length() > 30 && content.length() > 50) {
+			if (title.length() > 1 && brief.length() > 1 && content.length() > 1) {
 				DAOContent dao = new DAOContent();
-				dao.insertContent(title, brief, content, createddate, createddate, idmember);
+				dao.insertContent(title, brief, content, createddate, createddate, idmember,publiccontent);
 				request.setAttribute("message", "Insert Successfully");
 			}
 		} else {

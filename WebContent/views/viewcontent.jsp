@@ -32,18 +32,19 @@ $(window).on('load', function(event) {
 	<div class="loader">
 		<h1>Loading...</h1>
 	</div>
-			<h1 style="margin-top: 2%;">View Content</h1>
+			<h1 style="margin-top: 2%;">View Note</h1>
 			<hr />
 			<p style="margin: 0; padding: 0; color: red; font-size: x-large">${message}</p>
 			<br />
 			<table class="table-main">
 				<tr class="tr-main">
-					<th class="th-main">View Content List</th>
+					<th class="th-main">Note List</th>
 				</tr>
 				<tr class="tr-main">
 					<td class="td-main"><table class="table-son">
 							<tr class="tr-son">
 								<th class="th-son">#</th>
+								<th class="th-son">Username</th>
 								<th class="th-son">Title</th>
 								<th class="th-son">Brief</th>
 								<th class="th-son">Created Date</th>
@@ -53,6 +54,7 @@ $(window).on('load', function(event) {
 								end="${start+9}">
 								<tr class="tr-son">
 									<td class="td-son">${loop.index + 1}</td>
+									<td class="td-son">${content.username}</td>
 									<td class="td-son">${content.title}</td>
 									<td class="td-son">${content.brief}</td>
 									<td class="td-son">${content.createddate}</td>

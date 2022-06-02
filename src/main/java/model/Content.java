@@ -9,12 +9,13 @@ public class Content {
 	private String updatetime;
 	private String sort;
 	private int authorid;
-
+	private String username;
+	private int publiccontent;
 	public Content() {
 	}
 
 	public Content(int id, String title, String brief, String content, String createddate, String updatetime,
-			String sort, int authorid) {
+			String sort, int authorid, String username, int publiccontent) {
 		super();
 		this.id = id;
 		this.title = title;
@@ -24,6 +25,8 @@ public class Content {
 		this.updatetime = updatetime;
 		this.sort = sort;
 		this.authorid = authorid;
+		this.username= username;
+		this.publiccontent=publiccontent;
 	}
 
 	public int getId() {
@@ -89,11 +92,27 @@ public class Content {
 	public void setAuthorid(int authorid) {
 		this.authorid = authorid;
 	}
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public int getPubliccontent() {
+		return publiccontent;
+	}
+
+	public void setPubliccontent(int publiccontent) {
+		this.publiccontent = publiccontent;
+	}
 
 	@Override
 	public String toString() {
 		return "Content [id=" + id + ", title=" + title + ", brief=" + brief + ", content=" + content + ", createddate="
-				+ createddate + ", updatetime=" + updatetime + ", sort=" + sort + ", authorid=" + authorid + "]";
+				+ createddate + ", updatetime=" + updatetime + ", sort=" + sort + ", authorid=" + authorid
+				+ ", username=" + username + ", publiccontent=" + publiccontent + "]";
 	}
+	
 
 }

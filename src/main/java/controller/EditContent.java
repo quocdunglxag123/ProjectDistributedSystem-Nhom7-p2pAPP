@@ -30,9 +30,9 @@ public class EditContent extends HttpServlet {
 		String brief = request.getParameter("brief");
 		String content = request.getParameter("content");
 		String updatetime = java.time.LocalDateTime.now().toString();
-		
+		int publiccontent =Integer.parseInt(request.getParameter("publiccontent"));		
 		DAOContent dao = new DAOContent();
-		dao.editContent(id, title, brief, content, updatetime);
+		dao.editContent(id, title, brief, content, updatetime,publiccontent);
 		
 		request.setAttribute("message", "Update Successfully");
 		request.getRequestDispatcher("editcontent.tiles").forward(request, response);
