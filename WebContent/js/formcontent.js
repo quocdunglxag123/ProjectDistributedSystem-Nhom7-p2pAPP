@@ -14,40 +14,7 @@ var title = document.forms['formcontent']['title'];
 		if(title.value.length == "") {
 			document.getElementById('title').style.border = "3px solid red";
 			title_error.style.display ="block";
-			title_error1.style.display ="none";
-			/* title.focus(); */
-			return false;
-		}else if(title.value.length < 1){
-			document.getElementById('title').style.border = "3px solid red";
-			title_error.style.display ="none";
-			title_error1.style.display ="block";
-			return false;
-		}
-		if(brief.value.length == "") {
-			document.getElementById('brief').style.border = "3px solid red";
-			brief_error.style.display ="block";
-			brief_error1.style.display ="none";
-			/* brief.focus(); */
-			return false;
-		}else if(brief.value.length < 1){
-			document.getElementById('brief').style.border = "3px solid red";
-			brief_error.style.display ="none";
-			brief_error1.style.display ="block";
-			return false;
-		}
-		if(content.value.length == "") {
-			document.getElementById('content').style.border = "3px solid red";
-			content_error.style.display ="block";
-			content_error1.style.display ="none";
-			/* content.focus(); */
-			return false;
-		}else if(content.value.length < 1){
-			document.getElementById('content').style.border = "3px solid red";
-			content_error.style.display ="none";
-			content_error1.style.display ="block";
-			return false;
-		}
-		
+			}
 	}
 	
 	function title_Verify(){

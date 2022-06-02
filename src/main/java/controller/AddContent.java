@@ -27,18 +27,22 @@ public class AddContent extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		int publiccontent = 1;
 		String title = request.getParameter("title");
 		String brief = request.getParameter("brief");
 		String content = request.getParameter("content");
 		String createddate = java.time.LocalDateTime.now().toString();
 		int idmember = Integer.parseInt(CookieUtils.get("idmember", request));
-		int publiccontent =Integer.parseInt(request.getParameter("publiccontent"));
+		if(request.getParameter("publiccontent") != null)
+		{
+			publiccontent =Integer.parseInt(request.getParameter("publiccontent"));
+		}
+		
+		
 		if (title != null && brief != null && content != null && title != "" && brief != "" && content != "") {
-			if (title.length() > 1 && brief.length() > 1 && content.length() > 1) {
 				DAOContent dao = new DAOContent();
 				dao.insertContent(title, brief, content, createddate, createddate, idmember,publiccontent);
 				request.setAttribute("message", "Insert Successfully");
-			}
 		} else {
 			request.setAttribute("message", "Insert Fail");
 		}

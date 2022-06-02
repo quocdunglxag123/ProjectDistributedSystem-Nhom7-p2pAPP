@@ -25,24 +25,31 @@
 			<div class="menu">
 				<i class="fa fa-table"></i>
 				<p>
-					<b><a href="viewcontent.tiles">View Contents</a></b>
+					<b><a href="viewcontent.tiles">View Note</a></b>
 				</p>
 			</div>
 			<hr>
 			<div class="menu">
 				<i class="fas fa-edit"></i>
 				<p>
-					<b><a href="formcontent.tiles">Form Contents</a></b>
+					<b><a href="formcontent.tiles">Add Note</a></b>
 				</p>
 			</div>
 			<hr>
 			<div class="menu">
-				<i class="fas fa-video"></i>
+				<i class="fas fa-video" style="margin: 10px -15px 12px 12px;color: rgb(84 150 202); width: 10%;"></i>
 				<p>
-					<b><a href="http://localhost:8080/DoAnCuoiKy/views/videocall.jsp">Call Video</a></b>
+					<b><a target="_blank" href="http://localhost:8080/DoAnCuoiKy/views/videocall.jsp">Call Video</a></b>
 				</p>
 			</div>
-				<hr>
+			<hr>
+			<div class="menu">
+				<i class="fas fa-sms" style="margin: 10px -15px 12px 12px;color: rgb(84 150 202); width: 10%;"></i>
+				<p>
+					<b><a href="chatpage.tiles">Message</a></b>
+				</p>
+			</div>
+			<hr>
 			<div class="emplty"></div>
 		</form>
 	</div>

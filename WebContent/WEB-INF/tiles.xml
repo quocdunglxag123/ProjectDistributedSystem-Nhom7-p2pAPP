@@ -39,7 +39,8 @@
 	<!-- Search Contents -->
 	<definition name="search" extends="viewcontent">
 		<put-attribute name="data" value="" />
-		<put-attribute name="body" value="/views/viewcontent.jsp" />
+		<put-attribute name="body"
+			value="/views/viewcontent.jsp" />
 	</definition>
 
 	<!-- Form Content page -->
@@ -49,5 +50,10 @@
 		<put-attribute name="body"
 			value="/views/formcontent.jsp" />
 	</definition>
-
+	<!-- Chat page -->
+	<definition name="chatpage" extends="viewcontent">
+		<put-attribute name="title" value="Chatting" />
+		<put-attribute name="body"
+			value="/views/default.jsp" />
+	</definition>
 </tiles-definitions>
