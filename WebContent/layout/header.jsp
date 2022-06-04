@@ -16,7 +16,7 @@
 	<div class="container-Header">
 		<div class="row">
 			<div class="logocms">
-				<h1 class ="cms">CMS</h1>
+				<h1 class ="cms">GROUP 7</h1>
 			</div>
 			<div class="dropdown">
 				<button class="dropbtn">

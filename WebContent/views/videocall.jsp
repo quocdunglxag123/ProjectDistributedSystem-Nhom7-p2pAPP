@@ -8,12 +8,47 @@
 	href="<%=request.getContextPath()%>/css/videocall.css">
 <meta charset="ISO-8859-1">
 <title>Video Call</title>
+<style type="text/css">
+h1.title {
+    padding-top: 10px;
+    color: yellow;
+    text-align: center;
+    background-color: #222e3c;
+    height: 45px;
+}
+
+input#room-input {
+    width: 70%;
+    height: 20px;
+}
+
+div {
+    padding-top: 10px;
+}
+
+button {
+    width: 36%;
+    height: 31px;
+    background-color: lightgreen;
+}
+
+p {
+    color: darkgreen;
+}
+video#local-video {
+    margin-left: 50%;
+    height: 39.5%;
+    margin-top: 9.45%;
+    background-color: #4ee6dabf;
+    border: 1.5px solid black;
+}
+</style>
 </head>
 
 <body>
-	<h1 class="title">Project-Nhom7</h1>
+	<h1 class="title" style="padding-top: 10px;color: yellow;text-align: center;">GROUP 7</h1>
 	<p id="notification" hidden></p>
-	<div class="entry-modal" id="entry-modal">
+	<div class="entry-modal" id="entry-modal" style="margin-top: 10%; margin-left: -23%; height: 152px;background-color: #4ee6dabf;">
 		<p>Create or Join Meeting</p>
 		<input id="room-input" class="room-input" placeholder="Enter Room ID">
 		<div>
@@ -23,11 +58,11 @@
 	</div>
 	<div class="meet-area">
 		<!-- Remote Video Element-->
-		<video id="remote-video"></video>
+		<video id="remote-video" style="background-color: #c5e6e4;"></video>
 
 		<!-- Local Video Element-->
 		<video muted id="local-video"
-			style="margin-left: 80%; height: 30%; margin-top: 3%;"></video>
+			style="margin-left: 50%; height: 160px; margin-top: 9.45%; background-color: #4ee6dabf; border: 1.5px solid black;"><p>Local Video</p></video>
 		<div class="meet-controls-bar">
 			<button style="position: absolute; margin-top: 4%;"
 				class="button-sharescreen" id="ScreenShare" onclick="startScreenShare()">Screen

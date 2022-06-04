@@ -8,12 +8,18 @@ body{
     width: 100%;
     max-width: 100%;
     z-index: 1;
-    display: block;
-  
+    display: block;  
     position: absolute;
-    background-color: blue;
     color: white;
-   margin: 0;
+   	margin: 0;
+    background-color: #16163c;
+    height: 50px;
+}
+
+h1.title {
+    padding-top: 10px;
+    color: yellow;
+    text-align: center;
 }
 
 .entry-modal{
@@ -65,7 +71,7 @@ body{
     height: 100%;
     width: 100%;
     left: 0;
-    background-color: lightgray;
+    background-color: #c5e6e4;
     position: absolute;
 }
 

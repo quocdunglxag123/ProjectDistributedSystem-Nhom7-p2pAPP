@@ -1,0 +1,14 @@
+@charset "UTF-8";
+body{
+		padding-top: 10%;
+		background-color: rgb(245, 245, 245);
+	}
+.form-register #username_error, .form-register #email_error, .form-register #password_error, .form-register #repassword_error,
+.form-register #username_error1, .form-register #email_error1, .form-register #password_error1, .form-register #repassword_error1
+{
+	margin-top: 5px;
+	width: 345px;
+	font-size: 18px;
+	color: #C62828;
+	display: none;
+}

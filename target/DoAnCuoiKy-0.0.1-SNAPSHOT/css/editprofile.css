@@ -1,0 +1,112 @@
+@charset "UTF-8";
+.row-main {
+	border-radius: 4px;
+}
+
+h1.title {
+    margin-left: 16px;
+}
+
+.head_edt p {
+	border-top-left-radius: 4px;
+	background: RGB(245, 245, 245);
+	border-top-right-radius: 4px;
+	margin-bottom: 0px;
+	width: 95%;
+	margin-left: 20px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	display: inline-block;
+	border: 1px solid RGB(220, 220, 220);
+	border-bottom-width: 0px;
+	padding-left: 16px;
+}
+
+.hrprofile {
+	width: 100%;
+	margin-left: 18px;
+	background: rgb(242, 242, 242);
+}
+
+.body_edt {
+	background-color: white;
+	color: black;
+	border: 1px solid RGB(220, 220, 220);
+	width: 95%;
+	height: 90%;
+	margin-left: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 16px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.container-editprofile label {
+	display: block;
+	font-weight: 550;
+	margin-bottom: 8px;
+	margin-left: 16px;
+}
+
+
+.text {
+	width: 75%;
+	margin-left: 16px;
+	height: 25px;
+	border-radius: 4px;
+	padding-left: 10px;
+	border-bottom-color: lightgrey;
+	border-left-color: #d3d3d357;
+	border-top-color: #d3d3d357;
+	border-right-color: lightgrey;
+	border-width: 1px;
+}
+
+.textdes {
+	width: 75%;
+	margin-left: 16px;
+	height: 60px;
+	padding-left: 10px;
+	border-bottom-color: lightgrey;
+	border-left-color: lightgrey;
+	border-top-color: lightgrey;
+	border-right-color: lightgrey;
+	border-width: 1px;
+	border-radius: 4px;
+}
+
+.textemail {
+	font-weight: bold;
+	margin-left: 16px;
+	border-radius: 5px;
+}
+span#firstname_error,span#lastname_error,span#email_error,span#phone_error, span#description_error{
+    margin-left: 16px;
+}
+.btn_submit {
+	margin-bottom: 16px;
+	margin-left: 16px;
+	background: rgb(92,184,92);
+	border-top-color: RGB(220, 220, 220);
+	border-bottom-color: #d3d3d357;
+	border-left-color: RGB(220, 220, 220);
+	border-right-color: #d3d3d357;
+	border-radius: 5px;
+	padding: 5px
+}
+
+.btn_reset {
+	background:rgb(92,184,92);
+	border-top-color: RGB(220, 220, 220);
+	border-bottom-color: #d3d3d357;
+	border-left-color: RGB(220, 220, 220);
+	border-right-color: #d3d3d357;
+	border-width: 2px;
+	border-radius: 5px;
+	padding: 5px
+}
+
+.form{
+border: none;
+}

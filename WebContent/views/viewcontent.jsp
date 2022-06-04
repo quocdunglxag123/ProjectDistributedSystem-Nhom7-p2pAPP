@@ -22,6 +22,19 @@ $(window).on('load', function(event) {
 <title>View Contents</title>
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+	
+<style type="text/css">
+
+section {
+    width: 84%;
+    height: 637px;
+    min-height: 573px;
+    background-color: powderblue;
+}
+td.td-main {
+    background-color: white;
+}
+</style>
 </head>
 
 <body class="preloading">
@@ -32,7 +45,7 @@ $(window).on('load', function(event) {
 	<div class="loader">
 		<h1>Loading...</h1>
 	</div>
-			<h1 style="margin-top: 2%;">View Note</h1>
+			<h1 style="margin: 1%; text-align: center;">View Note</h1>
 			<hr />
 			<p style="margin: 0; padding: 0; color: red; font-size: x-large">${message}</p>
 			<br />
@@ -43,7 +56,7 @@ $(window).on('load', function(event) {
 				<tr class="tr-main">
 					<td class="td-main"><table class="table-son">
 							<tr class="tr-son">
-								<th class="th-son">#</th>
+								<!-- <th class="th-son">#</th> -->
 								<th class="th-son">Username</th>
 								<th class="th-son">Title</th>
 								<th class="th-son">Brief</th>
@@ -53,7 +66,7 @@ $(window).on('load', function(event) {
 							<c:forEach items="${listcontent}" var="content" varStatus="loop" begin="${start }"
 								end="${start+9}">
 								<tr class="tr-son">
-									<td class="td-son">${loop.index + 1}</td>
+									<%-- <td class="td-son">${loop.index + 1}</td> --%>
 									<td class="td-son">${content.username}</td>
 									<td class="td-son">${content.title}</td>
 									<td class="td-son">${content.brief}</td>

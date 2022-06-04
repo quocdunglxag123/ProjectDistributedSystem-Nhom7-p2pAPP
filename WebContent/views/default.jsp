@@ -16,6 +16,37 @@
 		messageText.value = "";
 	}
 </script>
+<style type="text/css">
+textarea#messagesTextArea {
+    width: 800px;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+input#messageText {
+    margin-left: 20%;
+    width: 700px;
+    height: 40px;
+}
+
+input[type="button"] {
+    width: 98px;
+    height: 40px;
+    background-color: #30c42b;
+    color: white;
+    margin-left: 2px;
+}
+
+section {
+    float: left;
+    width: 84%;
+    height: 637px;
+    /* border: 1px solid lightgrey; */
+    padding: 10px;
+    min-height: 573px;
+    background-color: powderblue;
+}
+</style>
 </head>
 <body>
 	<textarea id="messagesTextArea" readonly="readonly" rows="10" cols="45"></textarea>

@@ -6,7 +6,7 @@
 	font-size: 12px;
 	border: none;
 	cursor: pointer;
-	margin-top: 18px;
+	margin-top: 10px;
 }
 
 .dropdown {
@@ -15,6 +15,7 @@
 	padding-right: 1%;
 	width: 50%;
 	text-align: right;
+	background-color: #222e3c;
 }
 
 .dropdown-menu {
@@ -63,12 +64,13 @@
 .logocms {
 	padding-left: 0.5%;
 	width: 50%;
+	background-color: #222e3c;
 }
 
 h1.cms {
     font-size: 26px;
     margin-top: 18px;
-    color: gray;
+    color: yellow;
     margin-left: 12px;
 }
 h1.people {
