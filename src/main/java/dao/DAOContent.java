@@ -56,7 +56,7 @@ public class DAOContent {
 // Search
 	public List<Content> searchContents(String txtSearch, int idmember) {
 		List<Content> list = new ArrayList<>();
-		String query = "select * from Content where (title like ? or content like ? or brief like ? ) and authorid=?;";
+		String query = "select  Content.id,  Content.title,  Content.brief,  Content.content,  Content.createddate,  Content.updatetime, Content.sort,  Content.authorid,  member.username,  Content.publiccontent from Content join member on content.authorid=member.id where title like ? or content like ? or brief like ? and ( publiccontent=1 or authorid=? );";
 		//String query = "select * from Content where (title like ? or content like ? or brief like ? );";
 		try {
 			conn = new DBConnection().getConnection();

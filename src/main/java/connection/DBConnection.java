@@ -14,7 +14,7 @@ public class DBConnection {
 	private final String serverName = "localhost";
 	private final String dbName = "doanweb";
 	private final String userID = "root";
-	private final String password = "123456789";
+	private final String password = "quocdung";
 	
 	public static void main(String[] args) {
 		try {
