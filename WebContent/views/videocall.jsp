@@ -10,45 +10,49 @@
 <title>Video Call</title>
 <style type="text/css">
 h1.title {
-    padding-top: 10px;
-    color: yellow;
-    text-align: center;
-    background-color: #222e3c;
-    height: 45px;
+	padding-top: 10px;
+	color: yellow;
+	text-align: center;
+	background-color: #222e3c;
+	height: 45px;
 }
 
 input#room-input {
-    width: 70%;
-    height: 20px;
+	width: 70%;
+	height: 20px;
 }
 
 div {
-    padding-top: 10px;
+	padding-top: 10px;
 }
 
 button {
-    width: 36%;
-    height: 31px;
-    background-color: lightgreen;
+	width: 36%;
+	height: 31px;
+	background-color: lightgreen;
 }
 
 p {
-    color: darkgreen;
+	color: darkgreen;
 }
+
 video#local-video {
-    margin-left: 50%;
-    height: 39.5%;
-    margin-top: 9.45%;
-    background-color: #4ee6dabf;
-    border: 1.5px solid black;
+	margin-left: 50%;
+	height: 39.5%;
+	margin-top: 9.45%;
+	background-color: #4ee6dabf;
+	border: 1.5px solid black;
 }
 </style>
 </head>
 
 <body>
-	<h1 class="title" style="padding-top: 10px;color: yellow;text-align: center;">GROUP 7</h1>
+	<h1 class="title"
+		style="padding-top: 10px; color: yellow; text-align: center;">GROUP
+		7</h1>
 	<p id="notification" hidden></p>
-	<div class="entry-modal" id="entry-modal" style="margin-top: 10%; margin-left: -23%; height: 152px;background-color: #4ee6dabf;">
+	<div class="entry-modal" id="entry-modal"
+		style="margin-top: 5%; height: 152px; background-color: #4ee6dabf;">
 		<p>Create or Join Meeting</p>
 		<input id="room-input" class="room-input" placeholder="Enter Room ID">
 		<div>
@@ -62,11 +66,13 @@ video#local-video {
 
 		<!-- Local Video Element-->
 		<video muted id="local-video"
-			style="margin-left: 50%; height: 160px; margin-top: 9.45%; background-color: #4ee6dabf; border: 1.5px solid black;"><p>Local Video</p></video>
+			style="height: 20%; margin-top: 5%; background-color: #4ee6dabf; border: 1.5px solid black; right: 3%;">
+			<p>Local Video</p>
+		</video>
 		<div class="meet-controls-bar">
-			<button style="position: absolute; margin-top: 4%;"
-				class="button-sharescreen" id="ScreenShare" onclick="startScreenShare()">Screen
-				Share</button>
+			<button style="width: 8%; position: absolute; margin-top: 4%;"
+				 id="ScreenShare"
+				onclick="startScreenShare()">Screen Share</button>
 		</div>
 	</div>
 	<script language="javascript"

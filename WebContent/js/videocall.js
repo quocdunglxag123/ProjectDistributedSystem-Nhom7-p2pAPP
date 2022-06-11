@@ -7,6 +7,8 @@ var screenStream;
 var peer = null;
 var currentPeer = null
 var screenSharing = false
+document.getElementById("ScreenShare").style.display = 'none';
+document.getElementById('ScreenShare').innerHTML = 'Share Screen';
 function createRoom() {
     console.log("Creating Room")
     let room = document.getElementById("room-input").value;
@@ -33,6 +35,7 @@ function createRoom() {
             setRemoteStream(stream)
         })
         currentPeer = call;
+        document.getElementById("ScreenShare").style.display = 'block';
     })
 }
 
@@ -84,6 +87,7 @@ function joinRoom() {
                 setRemoteStream(stream);
             })
             currentPeer = call;
+            document.getElementById("ScreenShare").style.display = 'block';
         }, (err) => {
             console.log(err)
         })
@@ -92,6 +96,7 @@ function joinRoom() {
 }
 
 function startScreenShare() {
+	document.getElementById('ScreenShare').innerHTML = 'Sharing Screen';
     if (screenSharing) {
         stopScreenSharing()
     }
@@ -113,6 +118,7 @@ function startScreenShare() {
 }
 
 function stopScreenSharing() {
+	document.getElementById('ScreenShare').innerHTML = 'Share Screen';
     if (!screenSharing) return;
     let videoTrack = local_stream.getVideoTracks()[0];
     if (peer) {
