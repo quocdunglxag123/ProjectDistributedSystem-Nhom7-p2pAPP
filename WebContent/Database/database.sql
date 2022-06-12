@@ -1,4 +1,4 @@
---create database doanweb;
+create database doanweb;
 use doanweb;
 create table Member(
 	id int AUTO_INCREMENT,
@@ -43,11 +43,11 @@ INSERT INTO Member (firstname , lastname , username , password ,email ,phone ,de
 VALUES ('Tien@gmail.com', 'Tien@gmail.com', 'Tien@gmail.com', 'Tien@gmail.com','Tien@gmail.com','963852741','Nhom7','2021/04/26','2021/05/26');
 
 INSERT INTO Content (title , brief , content, createddate,updatetime , sort ,authorid,publiccontent)
-VALUES ('Dung Public', 'Dung Public', 'Dung Public','2021/04/26','2021/05/26', 'Dung Public',1);
+VALUES ('Dung Public', 'Dung Public', 'Dung Public','2021/04/26','2021/05/26', 'Dung Public',1,1);
 INSERT INTO Content (title , brief , content, createddate,updatetime , sort ,authorid,publiccontent)
-VALUES ('Tuyen Public', 'Tuyen Public', 'Dung Public','2021/04/26','2021/05/26', 'Tuyen Public',2);
+VALUES ('Tuyen Public', 'Tuyen Public', 'Tuyen Public','2021/04/26','2021/05/26', 'Tuyen Public',2,1);
 
 INSERT INTO Content (title , brief , content, createddate,updatetime , sort ,authorid,publiccontent)
-VALUES ('Dung Private', 'Dung Private', 'Dung Private','2021/04/26','2021/05/26', 'Dung Private',1);
+VALUES ('Dung Private', 'Dung Private', 'Dung Private','2021/04/26','2021/05/26', 'Dung Private',1,0);
 INSERT INTO Content (title , brief , content, createddate,updatetime , sort ,authorid,publiccontent)
-VALUES ('Tuyen Private', 'Tuyen Private', 'Dung Private','2021/04/26','2021/05/26', 'Tuyen Private',2);
+VALUES ('Tuyen Private', 'Tuyen Private', 'Tuyen Private','2021/04/26','2021/05/26', 'Tuyen Private',2,0);

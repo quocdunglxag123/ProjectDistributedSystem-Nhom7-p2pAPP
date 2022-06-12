@@ -5,7 +5,7 @@
 <title>Chatbox</title>
 <script type="text/javascript">
 	var websocket = new WebSocket(
-			"ws://localhost:8080/chatbox/ChatroomServerEndpoint");
+			"ws://localhost:8080/ProjectDistributedSystem-Nhom7-p2pAPP/ChatroomServerEndpoint");
 	websocket.onmessage = function processMessage(message) {
 		var jsonData = JSON.parse(message.data);
 		if (jsonData.message != null)
